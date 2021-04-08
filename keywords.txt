@@ -1,0 +1,56 @@
+////////////////////////////////////////////
+//////  www.lotus-arduibot.com   //////////
+///////////////////////////////////////////
+//////////// Library command ///////////
+LotusNanoBot	KEYWORD1
+///////////// servo command ///////////
+sv1		KEYWORD1
+sv2		KEYWORD1
+sv3		KEYWORD1
+servo		KEYWORD1
+///////////// Sound command ///////////
+snd			KEYWORD1
+sound		KEYWORD1
+beep		KEYWORD1
+///////////// Motor command ///////////
+run		KEYWORD1
+fd		KEYWORD1
+fd2		KEYWORD1
+bk		KEYWORD1
+ao		KEYWORD1
+tl		KEYWORD1
+tr		KEYWORD1
+sl		KEYWORD1
+sr		KEYWORD1
+///////////// IO command ///////////
+ok		KEYWORD1
+in		KEYWORD1
+out		KEYWORD1
+inA		KEYWORD1
+inAA	KEYWORD1
+set		KEYWORD1
+cpset	KEYWORD1
+oledset	KEYWORD1
+Knob	KEYWORD1
+sleep	KEYWORD1
+///////////// OLED command ///////////
+oled			KEYWORD1
+oledln			KEYWORD1
+oleddel			KEYWORD1
+oledset			KEYWORD1
+oledp			KEYWORD1
+oledlnp			KEYWORD1
+oleddelp		KEYWORD1
+oledsetp		KEYWORD1
+oledplay		KEYWORD1
+oledcur			KEYWORD1
+oledsize		KEYWORD1
+///////////// Compass  command ///////////
+cp				KEYWORD1
+cpx				KEYWORD1
+cpy				KEYWORD1
+cpz				KEYWORD1
+
+
+
+
