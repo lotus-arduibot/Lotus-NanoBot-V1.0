@@ -1,5 +1,6 @@
 //////////////////////////////////
 ////บทความที่เกี่ยวข้อง  https://sites.google.com/site/klsrobotcenter/lab-6-kar-kheiyn-kha-sangmenu-lotus-nano
+// not found??????????????????
 /////////////////////////////////
 ///////// ผนวกไลบรารี่ ////////////
 #include <Wire.h>
@@ -28,24 +29,21 @@ void loop(){
   OLED.print("   ");         // วรรค
   OLED.println(menu);        // แสดงค่า Menu ที่ได้จากการ map nob ให้เหลือ 0-12
   OLED.setTextSize(1);        // เซตขนาดอักษรมีขนาดเป็น 2
-  OLED.println("  KLS ROBOT CENTER");     // พิมพ์คำว่า KLS ROBOT CENTER
+  OLED.println("Mikhail Akhsakov");     // พิมพ์คำว่า Mikhail Akhsakov
   OLED.print("  ");                      // วรรค
   OLED.print(nob);                     // แสดงค่าที่อ่านได้จาก nob หรือ Analog7
-  OLED.println(" www.kls.ac.th");     // พิมพ์คำว่า www.kls.ac.th
+  OLED.println("Mikhail Akhsakov");     // พิมพ์คำว่า Mikhail Akhsakov
   OLED.display();
-  if ((sw == 0)and(menu==0)) { OLED.clearDisplay();OLED.display();}
-  if ((sw == 0)and(menu==1)) {t();}  //เมนู 1 เสียงดัง 1 ครั้ง 
-  if ((sw == 0)and(menu==2)) {t();t();}  //เมนู 2 เสียงดัง 2 ครั้ง 
-  if ((sw == 0)and(menu==3)) {t();t();t();}  //เมนู 3 เสียงดัง 3 ครั้ง 
-  if ((sw == 0)and(menu==4)) {t();t();t();t();}  //เมนู 4 เสียงดัง 4 ครั้ง 
-  if ((sw == 0)and(menu==5)) {t();t();t();t();t();}  //เมนู 5 เสียงดัง 5 ครั้ง 
-  if ((sw == 0)and(menu==6)) {t();t();t();t();t();t();}  //เมนู 6 เสียงดัง 6 ครั้ง 
-  if ((sw == 0)and(menu==7)) {t();t();t();t();t();t();t();}  //เมนู 7 เสียงดัง 7 ครั้ง 
-  if ((sw == 0)and(menu==8)) {t();t();t();t();t();t();t();t();}  //เมนู 8 เสียงดัง 8 ครั้ง 
-  if ((sw == 0)and(menu==9)) {t();t();t();t();t();t();t();t();t();}  //เมนู 9 เสียงดัง 9 ครั้ง 
-  if ((sw == 0)and(menu==10)) {t();t();t();t();t();t();t();t();t();t();}  //เมนู 10 เสียงดัง 10 ครั้ง 
-  if ((sw == 0)and(menu==11)) {t();t();t();t();t();t();t();t();t();t();t();}  //เมนู 11 เสียงดัง 11 ครั้ง 
-  if ((sw == 0)and(menu==12)) {t();t();t();t();t();t();t();t();t();t();t();t();}  //เมนู 12 เสียงดัง 12 ครั้ง 
+  if (sw !=0) // if sw is not 0 than back to loop()
+    return;
+  if (menu==0)  {
+    OLED.clearDisplay();
+    OLED.display();
+    delay(100);
+    return;
+  }
+  for (int i=0; i>menu;i++) 
+    t();
   delay(100);
 }
 void t()    // ฟังก์ชันเสียงดังที่พอร์ต 3
